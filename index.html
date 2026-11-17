@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0e1526">
+  <title>GESP C++ 知识闯关 · 按等级刷知识点</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="home-wrap">
+    <nav class="home-nav">
+      <a class="home-brand" href="index.html">
+        <span class="brand-mark">G</span>
+        <span><b>GESP C++ 知识闯关</b><span>按等级 · 按知识点 · 随机练习</span></span>
+      </a>
+      <span class="tag">本地离线可用</span>
+    </nav>
+
+    <header class="home-hero">
+      <div class="eyebrow">CCF GESP · C++ 1—8 级</div>
+      <h1>把每个知识点<br>练成自己的</h1>
+      <p>左侧知识树按章节梳理考纲考点，右侧随机生成选择与判断题。每关 5 题，答对 4 题通过，难度逐级解锁。</p>
+      <div class="stats">
+        <div><b>8</b><span>等级页面</span></div>
+        <div><b id="statPoints">70</b><span>知识点</span></div>
+        <div><b>3</b><span>难度梯度</span></div>
+      </div>
+    </header>
+
+    <div class="section-title">
+      <h2>选择等级</h2>
+      <span id="totalProgress">学习进度加载中…</span>
+    </div>
+    <div class="level-grid" id="levelGrid"></div>
+
+    <footer class="home-foot">
+      内容依据《GESP 考纲考点表（C++）》与 1—6、8 级复习手册整理；7 级依据考纲考点表整理。<br>
+      电脑上双击 start.bat 启动本地服务；手机连接同一 Wi-Fi 后，访问电脑 IPv4 地址的 8000 端口即可。<br>
+      学习进度保存在浏览器 localStorage 中，换设备不会同步。
+    </footer>
+  </div>
+
+  <script src="js/kb-data.js"></script>
+
+  <script src="js/kb-extra.js"></script>
+
+  <script src="js/kb.js"></script>
+
+  <script src="js/home.js"></script>
+</body>
+</html>
